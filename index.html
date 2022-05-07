@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="pages/styles.css">
+</head>
+<body class="page">
+    <div class="auth">
+        <div class="auth__container">
+            <p class="auth__title">Авторизация</p>
+            <form class="auth__form" action="#" method="post">
+            <input class="auth__input" type="text" name="auth_login" placeholder="Введите логин..." required >
+            <input class="auth__input" type="password" name="auth_pass" placeholder="Введите пароль..." required >
+            <button class="auth__button" type="submit" name="form_auth_submit">Войти</button>
+            </form>
+        </div>
+        
+    </div>
+    <script>
+        const form = document.querySelector('.auth__form');
+        form.addEventListener('submit', (evt) => {
+            evt.preventDefault();
+            window.location.replace('home.html');
+        });
+    </script>
+</body>
+</html>
