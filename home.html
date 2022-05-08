@@ -5,8 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
+    <link rel="stylesheet" href="pages/styles.css">
 </head>
 <body>
-    <p>Hello!</p>
+    <div class="sidenav">
+        <nav class="nav">
+            <p class="nav__title title">Меню</p>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Дефектовочные ведомости</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Заказ-наряды</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Справочники</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link nav__link-icon">Аналитика <span></span></a>
+                    <ul class="nav__item-submenu">
+                        <li class="nav__item-submenu__item"><a class="nav__item-submenu__link" href="">Оборачиваемость склада</a></li>
+                        <li class="nav__item-submenu__item"><a class="nav__item-submenu__link" href="">Автомобиль</a></li>
+                        <li class="nav__item-submenu__item"><a class="nav__item-submenu__link" href="">Шины</a></li>
+                        <li class="nav__item-submenu__item"><a class="nav__item-submenu__link" href="">АКБ</a></li>
+                        <li class="nav__item-submenu__item"><a class="nav__item-submenu__link" href="">Товары</a></li>
+                        <li class="nav__item-submenu__item"><a class="nav__item-submenu__link" href="">Услуги</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Администрирование</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Пользователь</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidenav__btns">
+            <a href="#" class="sidenav__btn">Настройки</a>
+            <a href="index.html" class="sidenav__btn">Выход</a>
+        </div>
+    </div>
+    
+    <section class="home section">
+        <h2 class="home__title">Главная страница</h2>
+        <p class="home__subtitle">Добро пожаловать на главную</p>
+    </section>
+    <script>
+        const submenuItem = document.querySelectorAll('.nav__link-icon');
+        const submenu = document.querySelector('.nav__item-submenu');
+        for(let i = 0; i < submenuItem.length; i++) {
+            const item = submenuItem[i];
+            item.addEventListener('click', () => {
+                const openSubmenu = submenu.classList.toggle('nav__item-submenu_active');
+                item.classList.toggle('nav__link-icon_active');
+            })
+        }
+    </script>
 </body>
 </html>

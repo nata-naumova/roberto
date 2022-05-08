@@ -1,0 +1,35 @@
+.sidenav {
+    /*height: 100%;*/
+    max-width: 20vw;
+    min-width: 160px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #cfdaec;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 0 15px 15px 0;
+}
+.sidenav__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidenav__btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #094d74;
+    border-bottom: 1px solid transparent;
+}
+.sidenav__btn:not(:last-child) {
+    margin-bottom: 20px;
+}
+.sidenav__btn:hover {
+    border-width: 100%;
+    border-bottom: 1px solid #094d74;
+}
