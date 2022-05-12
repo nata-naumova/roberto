@@ -1,0 +1,35 @@
+.defect {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.defect-btn {
+    padding-top: 10px;
+    flex-shrink: 0;
+}
+
+.defect__button {
+    text-decoration: none;
+    color: #333;
+    border: 1px solid;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.defect-icon-btn {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../images/plus-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.defect-table {
+    flex-shrink: 0;
+    flex-grow: 1;
+}

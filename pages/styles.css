@@ -1,11 +1,15 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
 
-
-@import url(../blocks/sidenav/sidenav.css);
-@import url(../blocks/nav/nav.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/vertical-menu/vertical-menu.css);
 
 @import url(../blocks/auth/auth.css);
 @import url(../blocks/home/home.css);
+@import url(../blocks/defect/defect.css);
+@import url(../blocks/table/table.css);
+@import url(../blocks/pagination/pagination.css);
 
-@import url(../blocks/page/page.css);
+@import url(../blocks/card/card.css);
+@import url(../blocks/tabs/tabs.css);
+

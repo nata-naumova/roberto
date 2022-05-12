@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дефектовочные ведомости</title>
+    <link rel="stylesheet" href="pages/styles.css">
+</head>
+<body class="page">
+    <nav class="nav vertical-menu-wrapper">
+        <div class="vertical-menu-logo">
+            <div>МЕНЮ</div>
+            <span class="open-menu-btn"><hr><hr><hr></span>
+        </div>
+        <ul class="nav__list vertical-menu">
+            <li class="nav__item"><a href="defect.html" class="nav__link">Дефектовочные ведомости</a> </li>
+            <li class="nav__item"><a href="#" class="nav__link">Заказ-наряды</a> </li>
+            <li class="nav__item"><a href="#" class="nav__link">Справочники</a> </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link nav__link-icon">
+                    Аналитика
+                    <span class="link-icon"></span>
+                </a>
+                <ul class="nav__item-submenu">
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">Оборачиваемость склада</a>
+                    </li>
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">Автомобиль</a>
+                    </li>
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">Шины</a>
+                    </li>
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">АКБ</a>
+                    </li>
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">Товары</a>
+                    </li>
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">Услуги</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Администрирование</a> </li>
+            <li class="nav__item"><a href="#" class="nav__link">Пользователь</a> </li>
+            <hr />
+            <li class="nav__item"><a href="#" class="nav__link">Настройки</a> </li>
+            <li class="nav__item"><a href="index.html" class="nav__link">Выход</a> </li>
+        </ul>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="content defect">
+            <div class="defect-btn">
+                <a href="creatcard.html" class="defect__button"><span class="defect-icon-btn"></span>Создать ведомость</a>
+            </div>
+            <div class="defect-table scroll-table">
+                <table>
+                    <thead>
+                        <tr class="table-column">
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner table-col__sort">Дата</div>
+                                <input type="text" class="table-col__input" placeholder="Поиск...">
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner table-col__sort">Номер</div>
+                                <input type="text" class="table-col__input" placeholder="Поиск...">
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner table-col__sort">Автомобиль</div>
+                                <input type="text" class="table-col__input" placeholder="Поиск...">
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner table-col__sort">Прицеп</div>
+                                <input type="text" class="table-col__input" placeholder="Поиск...">
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner table-col__sort">Пробег</div>
+                                <input type="text" class="table-col__input" placeholder="Поиск...">
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner table-col__sort">Создал</div>
+                                <input type="text" class="table-col__input" placeholder="Поиск...">
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner"></div>
+                            </th>
+                            
+                        </tr>  
+                    </thead>
+                </table>
+                <div class="scroll-table-body">
+                    <table>
+                        <tbody>
+                            <tr class="table-row__list" data-index="0">
+                                <td class="table-row__item">00.00.0000</td>
+                                <td class="table-row__item">1234567</td>
+                                <td class="table-row__item">Название автомобиля х000хх 0</td>
+                                <td class="table-row__item">Название прицепа х000хх 0</td>
+                                <td class="table-row__item">00000 км</td>
+                                <td class="table-row__item">Иванов Иван Иванович</td>
+                                <td class="table-row__item table-row__sect">
+                                    <div class="table-row__wrap">
+                                        <a href="#" class="table-row__btn"></a>
+                                        <ul class="table-row__cells">
+                                            <li class="table-row__cell">Просмотр</li>
+                                            <li class="table-row__cell">Редактировать</li>
+                                            <li class="table-row__cell">Удалить</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="table-row__list" data-index="0">
+                                <td class="table-row__item">00.00.0000</td>
+                                <td class="table-row__item">1234567</td>
+                                <td class="table-row__item">Название автомобиля х000хх 0</td>
+                                <td class="table-row__item">Название прицепа х000хх 0</td>
+                                <td class="table-row__item">00000 км</td>
+                                <td class="table-row__item">Иванов Иван Иванович</td>
+                                <td class="table-row__item table-row__sect">
+                                    <div class="table-row__wrap">
+                                        <a href="#" class="table-row__btn"></a>
+                                        <ul class="table-row__cells">
+                                            <li class="table-row__cell">Просмотр</li>
+                                            <li class="table-row__cell">Редактировать</li>
+                                            <li class="table-row__cell">Удалить</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody> 
+                    </table>
+                    
+                </div>
+                    
+                </table>
+            </div>
+            <div class="pagination">
+                <div class="pagination-wrap">
+                    <button class="pagination__btn"><</button>
+                    <button class="pagination__btn">1</button>
+                    <button class="pagination__btn">2</button>
+                    <button class="pagination__btn" disabled>...</button>
+                    <button class="pagination__btn">x</button>
+                    <button class="pagination__btn">></button>
+                    <select class="pagination__select">
+                        <option value="10" class="pagination__option">10</option>
+                        <option value="20" class="pagination__option">20</option>
+                        <option value="30" class="pagination__option">30</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

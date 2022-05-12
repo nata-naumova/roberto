@@ -7,60 +7,57 @@
     <title>Главная страница</title>
     <link rel="stylesheet" href="pages/styles.css">
 </head>
-<body>
-    <div class="sidenav">
-        <nav class="nav">
-            <p class="nav__title title">Меню</p>
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Дефектовочные ведомости</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Заказ-наряды</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Справочники</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link nav__link-icon">Аналитика <span></span></a>
-                    <ul class="nav__item-submenu">
-                        <li class="nav__item-submenu__item"><a class="nav__item-submenu__link" href="">Оборачиваемость склада</a></li>
-                        <li class="nav__item-submenu__item"><a class="nav__item-submenu__link" href="">Автомобиль</a></li>
-                        <li class="nav__item-submenu__item"><a class="nav__item-submenu__link" href="">Шины</a></li>
-                        <li class="nav__item-submenu__item"><a class="nav__item-submenu__link" href="">АКБ</a></li>
-                        <li class="nav__item-submenu__item"><a class="nav__item-submenu__link" href="">Товары</a></li>
-                        <li class="nav__item-submenu__item"><a class="nav__item-submenu__link" href="">Услуги</a></li>
-                    </ul>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Администрирование</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Пользователь</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="sidenav__btns">
-            <a href="#" class="sidenav__btn">Настройки</a>
-            <a href="index.html" class="sidenav__btn">Выход</a>
+<body class="page">
+    <nav class="nav vertical-menu-wrapper">
+        <div class="vertical-menu-logo">
+            <div>МЕНЮ</div>
+            <span class="open-menu-btn"><hr><hr><hr></span>
+        </div>
+        <ul class="nav__list vertical-menu">
+            <li class="nav__item"><a href="defect.html" class="nav__link">Дефектовочные ведомости</a> </li>
+            <li class="nav__item"><a href="#" class="nav__link">Заказ-наряды</a> </li>
+            <li class="nav__item"><a href="#" class="nav__link">Справочники</a> </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link nav__link-icon">
+                    Аналитика
+                    <span class="link-icon"></span>
+                </a>
+                <ul class="nav__item-submenu">
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">Оборачиваемость склада</a>
+                    </li>
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">Автомобиль</a>
+                    </li>
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">Шины</a>
+                    </li>
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">АКБ</a>
+                    </li>
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">Товары</a>
+                    </li>
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">Услуги</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Администрирование</a> </li>
+            <li class="nav__item"><a href="#" class="nav__link">Пользователь</a> </li>
+            <hr />
+            <li class="nav__item"><a href="#" class="nav__link">Настройки</a> </li>
+            <li class="nav__item"><a href="index.html" class="nav__link">Выход</a> </li>
+        </ul>
+    </nav>
+    <div class="content-wrapper">
+        <div class="content">
+            <div class="home">
+                <h2 class="home__title">Главная страница</h2>
+                <p class="home__subtitle">Добро пожаловать на главную</p>
+            </div>
         </div>
     </div>
-    
-    <section class="home section">
-        <h2 class="home__title">Главная страница</h2>
-        <p class="home__subtitle">Добро пожаловать на главную</p>
-    </section>
-    <script>
-        const submenuItem = document.querySelectorAll('.nav__link-icon');
-        const submenu = document.querySelector('.nav__item-submenu');
-        for(let i = 0; i < submenuItem.length; i++) {
-            const item = submenuItem[i];
-            item.addEventListener('click', () => {
-                const openSubmenu = submenu.classList.toggle('nav__item-submenu_active');
-                item.classList.toggle('nav__link-icon_active');
-            })
-        }
-    </script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

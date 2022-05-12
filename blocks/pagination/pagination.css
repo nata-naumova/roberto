@@ -1,0 +1,8 @@
+.pagination {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+}

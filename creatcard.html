@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дефектовочные ведомости</title>
+    <link rel="stylesheet" href="pages/styles.css">
+</head>
+<body class="page closed-menu">
+    <nav class="nav vertical-menu-wrapper">
+        <div class="vertical-menu-logo">
+            <div>МЕНЮ</div>
+            <span class="open-menu-btn"><hr><hr><hr></span>
+        </div>
+        <ul class="nav__list vertical-menu">
+            <li class="nav__item"><a href="defect.html" class="nav__link">Дефектовочные ведомости</a> </li>
+            <li class="nav__item"><a href="#" class="nav__link">Заказ-наряды</a> </li>
+            <li class="nav__item"><a href="#" class="nav__link">Справочники</a> </li>
+            <li class="nav__item">
+                <a href="#" class="nav__link nav__link-icon">
+                    Аналитика
+                    <span class="link-icon"></span>
+                </a>
+                <ul class="nav__item-submenu">
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">Оборачиваемость склада</a>
+                    </li>
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">Автомобиль</a>
+                    </li>
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">Шины</a>
+                    </li>
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">АКБ</a>
+                    </li>
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">Товары</a>
+                    </li>
+                    <li class="nav__item-submenu__item">
+                        <a class="nav__item-submenu__link" href="#">Услуги</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav__item"><a href="#" class="nav__link">Администрирование</a> </li>
+            <li class="nav__item"><a href="#" class="nav__link">Пользователь</a> </li>
+            <hr />
+            <li class="nav__item"><a href="#" class="nav__link">Настройки</a> </li>
+            <li class="nav__item"><a href="index.html" class="nav__link">Выход</a> </li>
+        </ul>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="content card">
+                <!--<table class="table">
+                    <thead>
+                        <tr class="table-column">
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner table-col__inner_active">Дата</div>
+                                <div class="table-col__cell">
+                                    <div class="table-col__filter">
+                                        <input type="text" class="table-col__input" placeholder="Поиск...">
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner">Номер</div>
+                                <div class="table-col__cell">
+                                    <div class="table-col__filter">
+                                        <input type="text" class="table-col__input" placeholder="Поиск...">
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner">Автомобиль</div>
+                                <div class="table-col__cell">
+                                    <div class="table-col__filter">
+                                        <input type="text" class="table-col__input" placeholder="Поиск...">
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner">Прицеп</div>
+                                <div class="table-col__cell">
+                                    <div class="table-col__filter">
+                                        <input type="text" class="table-col__input" placeholder="Поиск...">
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner">Пробег</div>
+                                <div class="table-col__cell">
+                                    <div class="table-col__filter">
+                                        <input type="text" class="table-col__input" placeholder="Поиск...">
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner">Создал</div>
+                                <div class="table-col__cell">
+                                    <div class="table-col__filter">
+                                        <input type="text" class="table-col__input" placeholder="Поиск...">
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner"></div>
+                            </th>
+                            
+                        </tr>  
+                    </thead>
+                    <tbody>
+                        <tr class="table-row__list" data-index="0">
+                            <td class="table-row__item">00.00.0000</td>
+                            <td class="table-row__item">1234567</td>
+                            <td class="table-row__item">Название автомобиля х000хх 0</td>
+                            <td class="table-row__item">Название прицепа х000хх 0</td>
+                            <td class="table-row__item">00000 км</td>
+                            <td class="table-row__item">Иванов Иван Иванович</td>
+                            <td class="table-row__item table-row__sect">
+                                <div class="table-row__wrap">
+                                    <a href="#" class="table-row__btn"></a>
+                                    <ul class="table-row__cells">
+                                        <li class="table-row__cell">Просмотр</li>
+                                        <li class="table-row__cell">Редактировать</li>
+                                        <li class="table-row__cell">Удалить</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-row__list" data-index="0">
+                            <td class="table-row__item">00.00.0000</td>
+                            <td class="table-row__item">1234567</td>
+                            <td class="table-row__item">Название автомобиля х000хх 0</td>
+                            <td class="table-row__item">Название прицепа х000хх 0</td>
+                            <td class="table-row__item">00000 км</td>
+                            <td class="table-row__item">Иванов Иван Иванович</td>
+                            <td class="table-row__item table-row__sect">
+                                <div class="table-row__wrap">
+                                    <a href="#" class="table-row__btn"></a>
+                                    <ul class="table-row__cells">
+                                        <li class="table-row__cell">Просмотр</li>
+                                        <li class="table-row__cell">Редактировать</li>
+                                        <li class="table-row__cell">Удалить</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>-->
+                <div class="card-btns">
+                    <div class="card-btns__wrap">
+                        <div class="wrap"><button class="card-btn__icon card-btn__icon_back"></button></div>
+                        <div class="wrap"><button class="card-btn__icon card-btn__icon_book"></button></div>
+                        <div class="wrap"><button class="card-btn__icon card-btn__icon_download"></button></div>
+                        <div class="wrap"><button class="card-btn__icon card-btn__icon_cancel"></button></div>
+                        <div class="wrap"><button class="card-btn__icon card-btn__icon_save"></button></div>
+                    </div>
+                    <div class="card-btns__wrap">
+                        <div class="wrap"><button class="card-btn__icon card-btn__icon_delete"></button></div>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <table class="card-info__table">
+                        <tbody>
+                            <tr>
+                              <th scope="row">Дата</th>
+                              <td><input type="text" placeholder="00.00.0000"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Номер</th>
+                                <td><input type="text" placeholder="0000АБВ"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Автомобиль</th>
+                                <td><input type="text" placeholder="Название авто х000хх 00"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Прицеп</th>
+                                <td><input type="text" placeholder="Название прицепа х000хх 00"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Пробег</th>
+                                <td><input type="text" placeholder="0000 км"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Создал</th>
+                                <td>Иванов Иван Иванович</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Комментарий</th>
+                                <td><input type="text" placeholder="Введите комментарий"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Связанные документы</th>
+                                <td>Заказ-наряд 0000АБВ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-wrap">
+                    <div class="tabs">
+                        <input type="radio" name="tab-btn" id="tab-btn-1" value="">
+                        <label for="tab-btn-1">Товары</label>
+                        <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                        <label for="tab-btn-2">Услуги</label>
+                        <input type="radio" name="tab-btn" id="tab-btn-3" value="" checked>
+                        <label for="tab-btn-3">Автомобиль / Прицеп</label>
+                        <input type="radio" name="tab-btn" id="tab-btn-4" value="">
+                        <label for="tab-btn-4">Шины</label>
+                        <input type="radio" name="tab-btn" id="tab-btn-5" value="">
+                        <label for="tab-btn-5">Акб / --- </label>
+                    
+                        <div id="content-1">
+                          <table class="card-table">
+                              <thead>
+                                <tr>
+                                    <th class="card-table__th"></th>
+                                    <th class="card-table__th">№</th>
+                                    <th class="card-table__th">Наименование</th>
+                                    <th class="card-table__th">Склад</th>
+                                    <th class="card-table__th">Количество</th>
+                                    <th class="card-table__th">Статус</th>
+                                    <th class="card-table__th"></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                    <td class="card-table__td">
+                                        <button class="tab__btn tab__btn_add"></button>
+                                    </td>
+                                    <td class="card-table__td">1</td>
+                                    <td class="card-table__td">
+                                        <select class="card-table__select">
+                                            <option>Выберите товар</option>
+                                            <option value="Товар 1">Товар 1</option>
+                                            <option value="Товар 2">Товар 2</option>
+                                            <option value="Товар 3">Товар 3</option>
+                                        </select>
+                                    </td>
+                                    <td class="card-table__td">
+                                        <select class="card-table__select">
+                                            <option>Выберите склад</option>
+                                            <option value="Склад 1">Склад 1</option>
+                                            <option value="Склад 2">Склад 2</option>
+                                            <option value="Склад 3">Склад 3</option>
+                                        </select>
+                                    </td>
+                                    <td class="card-table__td">
+                                        <input class="card-table__input" type="text" placeholder="0000">
+                                    </td>
+                                    <td class="card-table__td">
+                                        <select class="card-table__select">
+                                            <option>Выберите статус</option>
+                                            <option value="Склад 1">Есть</option>
+                                            <option value="Склад 2">Нет</option>
+                                        </select>
+                                    </td>
+                                    <td class="card-table__td"><button class="tab__btn tab__btn_remove"></button></td>
+                                </tr>
+                                <tr class="tab__result">
+                                    <td class="card-table__td"></td>
+                                    <td class="card-table__td" colspan="2">Итого</td>
+                                    <td class="card-table__td"></td>
+                                    <td class="card-table__td">0000</td>
+                                    <td class="card-table__td"></td>
+                                    <td class="card-table__td"></td>
+                                </tr>
+                              </tbody>
+                          </table>
+                        </div>
+                        <div id="content-2">
+                          Содержимое 2...
+                        </div>
+                        <div id="content-3">
+                          <div class="avto-probeg"></div>
+                          <table class="card-table avto">
+                            <thead>
+                              <tr>
+                                  <th class="card-table__th">№</th>
+                                  <th class="card-table__th">Описание, вид работ</th>
+                                  <th class="card-table__th">Обнаруженные отклонения</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="card-table__td avto__td">1</td>
+                                    <td class="card-table__td avto__td" colspan="2">Тормозные шланги</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-table__td avto-td" colspan="2">Проверьте наличие повреждений, трещин и риска перетирания тормозных шлангов </td>
+                                    <td class="card-table__td">
+                                        <textarea class="card-table__textarea"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="card-table__td avto__td">2</td>
+                                    <td class="card-table__td avto__td" colspan="2">Дисковые тормоза</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-table__td avto-td" colspan="2">Запишите остаточную толщину тормозных дисков и колодок в мм.  </td>
+                                    <td class="card-table__td">
+                                        <div class="avto__row">
+                                           <div class="avto__name">Рулевая</div> 
+                                           <div class="avto__row">
+                                               <p>Слева</p>
+                                               <div class="avto__input">
+                                                   <span>Д</span>
+                                                   <input class="avto__symbol" type="text">
+                                               </div>
+                                               <div class="avto__input">
+                                                    <span>К</span>
+                                                    <input class="avto__symbol" type="text">
+                                                </div>
+                                           </div> 
+                                           <div class="avto__row">
+                                            <p>Справа</p>
+                                            <div class="avto__input">
+                                                <span>Д</span>
+                                                <input class="avto__symbol" type="text">
+                                            </div>
+                                            <div class="avto__input">
+                                                 <span>К</span>
+                                                 <input class="avto__symbol" type="text">
+                                             </div>
+                                           </div> 
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div id="content-4">
+                            Содержимое 4...
+                        </div>
+                        <div id="content-5">
+                            Содержимое 5...
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

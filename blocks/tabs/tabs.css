@@ -1,0 +1,106 @@
+.tabs {
+    font-size: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tabs>input[type="radio"] {
+    display: none;
+  }
+
+  .tabs>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+    border: 1px solid #333;
+    font-size: 14px;
+  }
+
+  /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+  #tab-btn-1:checked~#content-1,
+  #tab-btn-2:checked~#content-2,
+  #tab-btn-3:checked~#content-3,
+  #tab-btn-4:checked~#content-4,
+  #tab-btn-5:checked~#content-5 {
+    display: block;
+  }
+
+  .tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #cfdaec;
+    border: 1px solid #333;
+    padding: 2px 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    transition: background-color 0.3s ease;
+  }
+
+  .tabs>label:not(:first-of-type) {
+    border-left: none;
+  }
+  .tabs>label:hover {
+    background-color: #9cb9d1;
+  }
+  .tabs>input[type="radio"]:checked+label {
+    background-color: #759cd8;
+    color: #fff;
+    transition: all 0.3s ease;
+
+    border-bottom: 1px solid #333;
+  }
+
+.tab__btn {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.tab__btn_add {
+  background-image: url(../../images/plus-icon.svg);
+}
+.tab__btn_remove {
+  background-image: url(../../images/cancel-icon.svg);
+}
+.tab__result td {
+  padding: 5px;
+  text-align: left;
+}
+.avto-td {
+  width: 40%;
+}
+.avto__td {
+  padding: 5px;
+  background-color: #eef0f6;
+}
+.avto__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.avto__row p {
+  margin-right: 10px;
+}
+.avto__input {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.avto__input span {
+  background: #cfdaec;
+  border: 1px solid;
+  padding: 3px;
+  font-size: 12px;
+}
+.avto__symbol {
+  width: 65px;
+}
