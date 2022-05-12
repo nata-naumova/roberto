@@ -75,6 +75,12 @@
   padding: 5px;
   text-align: left;
 }
+.avto-probeg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 5px;
+}
 .avto-td {
   width: 40%;
 }
@@ -88,6 +94,7 @@
   justify-content: space-between;
 }
 .avto__row p {
+  margin: 0;
   margin-right: 10px;
 }
 .avto__input {
@@ -103,4 +110,7 @@
 }
 .avto__symbol {
   width: 65px;
+}
+.avto__nosymbol {
+  width: 60%;
 }

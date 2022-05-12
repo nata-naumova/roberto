@@ -99,7 +99,7 @@
 .content-wrapper {
     width: calc(100% - 300px);
     height: 100%;
-    position: fixed;
+    position: sticky;
     background: #fff;
     left: 300px;
     padding: 20px;

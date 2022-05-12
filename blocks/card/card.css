@@ -98,12 +98,14 @@
 
 .card-table__td {
     border-top: 1px solid;
-    text-align: center;
+    padding: 5px;
 }
 .card-table__td:not(:last-child) {
     border-right: 1px solid;
 }
-
+.tab__btns {
+    text-align: center;
+}
 .card-table__input,
 .card-table__select,
 .card-table__textarea {
