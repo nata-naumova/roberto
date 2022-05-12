@@ -111,9 +111,9 @@
                         <label for="tab-btn-2">Услуги</label>
                         <input type="radio" name="tab-btn" id="tab-btn-3" value="">
                         <label for="tab-btn-3">Автомобиль</label>
-                        <input type="radio" name="tab-btn" id="tab-btn-4" value="" checked>
+                        <input type="radio" name="tab-btn" id="tab-btn-4" value="">
                         <label for="tab-btn-4">Шины</label>
-                        <input type="radio" name="tab-btn" id="tab-btn-5" value="">
+                        <input type="radio" name="tab-btn" id="tab-btn-5" value="" checked>
                         <label for="tab-btn-5">Акб</label>
                     
                         <div id="content-1">
@@ -806,7 +806,51 @@
                             </table>
                         </div>
                         <div id="content-5">
-                            Содержимое 5...
+                            <table class="card-table">
+                                <thead>
+                                  <tr>
+                                      <th class="card-table__th"></th>
+                                      <th class="card-table__th">№</th>
+                                      <th class="card-table__th">Бренд АКБ</th>
+                                      <th class="card-table__th">Пусковой заряд изготовителя</th>
+                                      <th class="card-table__th">Дата покупки</th>
+                                      <th class="card-table__th">НРЦ</th>
+                                      <th class="card-table__th">Пусковой заряд</th>
+                                      <th class="card-table__th">Заряд АКБ (%)</th>
+                                      <th class="card-table__th"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- 1 ось -->
+                                    <tr>
+                                        <td class="card-table__td "><button class="tab__btn tab__btn_add"></button></td>
+                                        <td class="card-table__td ">1</td>
+                                        <td class="card-table__td ">
+                                            <select class="card-table__select">
+                                                <option>Выберите</option>
+                                                <option value="Склад 1">1</option>
+                                                <option value="Склад 2">2</option>
+                                            </select>
+                                        </td>
+                                        <td class="card-table__td ">
+                                            <input class="card-table__input" type="number">
+                                        </td>
+                                        <td class="card-table__td ">
+                                            <input class="card-table__input" type="date">
+                                        </td>
+                                        <td class="card-table__td ">
+                                            <input class="card-table__input" type="text">
+                                        </td>
+                                        <td class="card-table__td ">
+                                            <input class="card-table__input" type="text">
+                                        </td>
+                                        <td class="card-table__td ">
+                                            <input class="card-table__input" type="text">
+                                        </td>
+                                        <td class="card-table__td "><button class="tab__btn tab__btn_remove"></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
