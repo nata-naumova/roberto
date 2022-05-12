@@ -110,11 +110,11 @@
                         <input type="radio" name="tab-btn" id="tab-btn-2" value="">
                         <label for="tab-btn-2">Услуги</label>
                         <input type="radio" name="tab-btn" id="tab-btn-3" value="">
-                        <label for="tab-btn-3">Автомобиль / Прицеп</label>
+                        <label for="tab-btn-3">Автомобиль</label>
                         <input type="radio" name="tab-btn" id="tab-btn-4" value="" checked>
                         <label for="tab-btn-4">Шины</label>
                         <input type="radio" name="tab-btn" id="tab-btn-5" value="">
-                        <label for="tab-btn-5">Акб / --- </label>
+                        <label for="tab-btn-5">Акб</label>
                     
                         <div id="content-1">
                           <table class="card-table">
@@ -266,7 +266,7 @@
                                     <td class="card-table__td avto-td" colspan="2">Запишите остаточную толщину тормозных дисков и колодок в мм.  </td>
                                     <td class="card-table__td">
                                         <div class="avto__row">
-                                           <div class="avto__name">Рулевая</div> 
+                                           <div class="avto__name" style="margin-right: 5px;">Рулевая</div> 
                                            <div class="avto__row">
                                                <p>Слева</p>
                                                <div class="avto__input">
@@ -351,7 +351,7 @@
                                     <td class="card-table__td avto-td" colspan="2">Запишите остаточную толщину накладок и диаметр барабанов в мм. </td>
                                     <td class="card-table__td">
                                         <div class="avto__row">
-                                           <div class="avto__name">Рулевая</div> 
+                                           <div class="avto__name" style="margin-right: 5px;">Рулевая</div> 
                                            <div class="avto__row">
                                                <p>Слева</p>
                                                <div class="avto__input">
@@ -436,7 +436,7 @@
                                     <td class="card-table__td avto-td" colspan="2">Проверьте и запишите наличие люфтов в разжимных валах и направляющих суппорта</td>
                                     <td class="card-table__td">
                                         <div class="avto__row">
-                                           <div class="avto__name">Рулевая</div> 
+                                           <div class="avto__name" style="margin-right: 5px;">Рулевая</div> 
                                            <div class="avto__row">
                                                <p>Слева</p>
                                                <div class="avto__input">
@@ -491,7 +491,7 @@
                                     <td class="card-table__td avto-td" colspan="2">Проверьте состояние пневмобаллонов на предмет повреждений и утечек воздуха</td>
                                     <td class="card-table__td">
                                         <div class="avto__row">
-                                           <div class="avto__name">Рулевая</div> 
+                                           <div class="avto__name" style="margin-right: 5px;">Рулевая</div> 
                                            <div class="avto__row">
                                                <p>Слева</p>
                                                <div class="avto__input">
@@ -546,7 +546,7 @@
                                     <td class="card-table__td avto-td" colspan="2">Проверьте наличие трещин и признаков течи рабочей жидкости</td>
                                     <td class="card-table__td">
                                         <div class="avto__row">
-                                           <div class="avto__name">Рулевая</div> 
+                                           <div class="avto__name" style="margin-right: 5px;">Рулевая</div> 
                                            <div class="avto__row">
                                                <p>Слева</p>
                                                <div class="avto__input">
@@ -676,7 +676,12 @@
                                             <input class="card-table__input" type="text">
                                         </td>
                                         <td class="card-table__td ">
-                                            <input class="card-table__input" type="number">
+                                            <select class="card-table__select">
+                                                <option>Выбрать</option>
+                                                <option value="Товар 1">Шина 1</option>
+                                                <option value="Товар 2">Шина 2</option>
+                                                <option value="Товар 3">Шина 3</option>
+                                            </select>
                                         </td>
                                     </tr>
                                     <tr>
@@ -685,7 +690,12 @@
                                             <input class="card-table__input" type="text">
                                         </td>
                                         <td class="card-table__td ">
-                                            <input class="card-table__input" type="number">
+                                            <select class="card-table__select">
+                                                <option>Выбрать</option>
+                                                <option value="Товар 1">Шина 1</option>
+                                                <option value="Товар 2">Шина 2</option>
+                                                <option value="Товар 3">Шина 3</option>
+                                            </select>
                                         </td>
                                     </tr>
                                     <!-- 2 ось -->
@@ -694,23 +704,51 @@
                                         <td class="card-table__td" rowspan="2">Слева</td>
                                         <td class="card-table__td ">Наружн</td>
                                         <td class="card-table__td "><input class="card-table__input" type="text"></td>
-                                        <td class="card-table__td "><input class="card-table__input" type="number"></td>
+                                        <td class="card-table__td ">
+                                            <select class="card-table__select">
+                                                <option>Выбрать</option>
+                                                <option value="Товар 1">Шина 1</option>
+                                                <option value="Товар 2">Шина 2</option>
+                                                <option value="Товар 3">Шина 3</option>
+                                            </select>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="card-table__td">Внутр</td>
                                         <td class="card-table__td "><input class="card-table__input" type="text"></td>
-                                        <td class="card-table__td "><input class="card-table__input" type="number"></td>
+                                        <td class="card-table__td ">
+                                            <select class="card-table__select">
+                                                <option>Выбрать</option>
+                                                <option value="Товар 1">Шина 1</option>
+                                                <option value="Товар 2">Шина 2</option>
+                                                <option value="Товар 3">Шина 3</option>
+                                            </select>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="card-table__td" rowspan="2">Справа</td>
                                         <td class="card-table__td">Внутр</td>
                                         <td class="card-table__td"><input class="card-table__input" type="text"></td>
-                                        <td class="card-table__td"><input class="card-table__input" type="number"></td>
+                                        <td class="card-table__td">
+                                            <select class="card-table__select">
+                                                <option>Выбрать</option>
+                                                <option value="Товар 1">Шина 1</option>
+                                                <option value="Товар 2">Шина 2</option>
+                                                <option value="Товар 3">Шина 3</option>
+                                            </select>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="card-table__td">Наружн</td>
                                         <td class="card-table__td "><input class="card-table__input" type="text"></td>
-                                        <td class="card-table__td "><input class="card-table__input" type="number"></td>
+                                        <td class="card-table__td ">
+                                            <select class="card-table__select">
+                                                <option>Выбрать</option>
+                                                <option value="Товар 1">Шина 1</option>
+                                                <option value="Товар 2">Шина 2</option>
+                                                <option value="Товар 3">Шина 3</option>
+                                            </select>
+                                        </td>
                                     </tr>
                                     <!-- 3 ось -->
                                     <tr>
@@ -718,23 +756,51 @@
                                         <td class="card-table__td" rowspan="2">Слева</td>
                                         <td class="card-table__td ">Наружн</td>
                                         <td class="card-table__td "><input class="card-table__input" type="text"></td>
-                                        <td class="card-table__td "><input class="card-table__input" type="number"></td>
+                                        <td class="card-table__td ">
+                                            <select class="card-table__select">
+                                                <option>Выбрать</option>
+                                                <option value="Товар 1">Шина 1</option>
+                                                <option value="Товар 2">Шина 2</option>
+                                                <option value="Товар 3">Шина 3</option>
+                                            </select>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="card-table__td">Внутр</td>
                                         <td class="card-table__td "><input class="card-table__input" type="text"></td>
-                                        <td class="card-table__td "><input class="card-table__input" type="number"></td>
+                                        <td class="card-table__td ">
+                                            <select class="card-table__select">
+                                                <option>Выбрать</option>
+                                                <option value="Товар 1">Шина 1</option>
+                                                <option value="Товар 2">Шина 2</option>
+                                                <option value="Товар 3">Шина 3</option>
+                                            </select>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="card-table__td" rowspan="2">Справа</td>
                                         <td class="card-table__td">Внутр</td>
                                         <td class="card-table__td"><input class="card-table__input" type="text"></td>
-                                        <td class="card-table__td"><input class="card-table__input" type="number"></td>
+                                        <td class="card-table__td">
+                                            <select class="card-table__select">
+                                                <option>Выбрать</option>
+                                                <option value="Товар 1">Шина 1</option>
+                                                <option value="Товар 2">Шина 2</option>
+                                                <option value="Товар 3">Шина 3</option>
+                                            </select>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="card-table__td">Наружн</td>
                                         <td class="card-table__td "><input class="card-table__input" type="text"></td>
-                                        <td class="card-table__td "><input class="card-table__input" type="number"></td>
+                                        <td class="card-table__td ">
+                                            <select class="card-table__select">
+                                                <option>Выбрать</option>
+                                                <option value="Товар 1">Шина 1</option>
+                                                <option value="Товар 2">Шина 2</option>
+                                                <option value="Товар 3">Шина 3</option>
+                                            </select>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
