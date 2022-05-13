@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дефектовочные ведомости</title>
+    <title>Заказ-наряды</title>
     <link rel="stylesheet" href="pages/styles.css">
 </head>
-<body class="page">
+<body class="page closed-menu">
     <nav class="nav vertical-menu-wrapper">
         <div class="vertical-menu-logo">
             <div>МЕНЮ</div>
@@ -15,7 +15,7 @@
         </div>
         <ul class="nav__list vertical-menu">
             <li class="nav__item"><a href="defect.html" class="nav__link">Дефектовочные ведомости</a> </li>
-            <li class="nav__item"><a href="order.html" class="nav__link">Заказ-наряды</a> </li>
+            <li class="nav__item"><a href="#" class="nav__link">Заказ-наряды</a> </li>
             <li class="nav__item"><a href="#" class="nav__link">Справочники</a> </li>
             <li class="nav__item">
                 <a href="#" class="nav__link nav__link-icon">
@@ -50,11 +50,10 @@
             <li class="nav__item"><a href="index.html" class="nav__link">Выход</a> </li>
         </ul>
     </nav>
-
     <div class="content-wrapper">
         <div class="content defect">
             <div class="defect-btn">
-                <a href="creatcard.html" class="defect__button"><span class="defect-icon-btn"></span>Создать ведомость</a>
+                <a href="#" class="defect__button"><span class="defect-icon-btn"></span>Создать</a>
             </div>
             <div class="defect-table scroll-table">
                 <table>
@@ -77,15 +76,15 @@
                                 <input type="text" class="table-col__input" placeholder="Поиск...">
                             </th>
                             <th class="table-col" tabindex="0">
-                                <div class="table-col__inner table-col__sort">Пробег</div>
+                                <div class="table-col__inner table-col__sort">Сумма</div>
                                 <input type="text" class="table-col__input" placeholder="Поиск...">
                             </th>
                             <th class="table-col" tabindex="0">
-                                <div class="table-col__inner table-col__sort">Создал</div>
+                                <div class="table-col__inner table-col__sort">Деф. ведомость</div>
                                 <input type="text" class="table-col__input" placeholder="Поиск...">
                             </th>
                             <th class="table-col table-col__sect" tabindex="0">
-                                <div class="table-col__inner "></div>
+                                <div class="table-col__inner"></div>
                             </th>
                             
                         </tr>  
@@ -99,15 +98,15 @@
                                 <td class="table-row__item">1234567</td>
                                 <td class="table-row__item">Название автомобиля х000хх 0</td>
                                 <td class="table-row__item">Название прицепа х000хх 0</td>
-                                <td class="table-row__item">00000 км</td>
+                                <td class="table-row__item">00000 руб</td>
                                 <td class="table-row__item">Иванов Иван Иванович</td>
                                 <td class="table-row__item table-row__sect">
-                                    <div class="table-row__wrap">
-                                        <a href="#" class="table-row__btn"></a>
-                                        <ul class="table-row__cells">
-                                            <li class="table-row__cell">Просмотр</li>
-                                            <li class="table-row__cell">Редактировать</li>
-                                            <li class="table-row__cell">Удалить</li>
+                                    <a href="#" class="table-row__btn dropdown-btn"></a>
+                                    <div class="dropdown">
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__item">Просмотр</li>
+                                            <li class="dropdown__item">Редактировать</li>
+                                            <li class="dropdown__item">Удалить</li>
                                         </ul>
                                     </div>
                                 </td>
@@ -117,15 +116,15 @@
                                 <td class="table-row__item">1234567</td>
                                 <td class="table-row__item">Название автомобиля х000хх 0</td>
                                 <td class="table-row__item">Название прицепа х000хх 0</td>
-                                <td class="table-row__item">00000 км</td>
+                                <td class="table-row__item">00000 руб</td>
                                 <td class="table-row__item">Иванов Иван Иванович</td>
                                 <td class="table-row__item table-row__sect">
-                                    <div class="table-row__wrap">
-                                        <a href="#" class="table-row__btn"></a>
-                                        <ul class="table-row__cells">
-                                            <li class="table-row__cell">Просмотр</li>
-                                            <li class="table-row__cell">Редактировать</li>
-                                            <li class="table-row__cell">Удалить</li>
+                                    <a href="#" class="table-row__btn dropdown-btn"></a>
+                                    <div class="dropdown">
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__item">Просмотр</li>
+                                            <li class="dropdown__item">Редактировать</li>
+                                            <li class="dropdown__item">Удалить</li>
                                         </ul>
                                     </div>
                                 </td>

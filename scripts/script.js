@@ -19,14 +19,18 @@ for(let i = 0; i < submenuItem.length; i++) {
 }
 
 //Кнопка в таблице (троеточие)
-const tableDots = document.querySelectorAll('.table-row__btn');
+const menuBtns = document.querySelectorAll('.dropdown-btn');
+const drops = document.querySelectorAll('.dropdown');
 
-for(let i = 0; i < tableDots.length; i++) {
-    const tableItem = tableDots[i];
-    tableItem.addEventListener('click', (evt) => {
-        const tableList = evt.target.closest('.table-row__wrap').querySelector('.table-row__cells');
-        tableList.classList.toggle('active');
-        const tableRow = evt.target.closest('.table-row__sect');
-        tableRow.classList.toggle('table-row__sect_active');
-    })
-}
+menuBtns.forEach(el => {
+    el.addEventListener('click', (e) => {
+        let currentBtn = e.currentTarget;
+        let drop = currentBtn.closest('.table-row__sect').querySelector('.dropdown');
+        drops.forEach(el => {
+            if(el !== drop) {
+                el.classList.remove('dropdown_active');
+            }
+        });
+        drop.classList.toggle('dropdown_active');
+    });
+})
