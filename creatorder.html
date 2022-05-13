@@ -105,9 +105,9 @@
                 </div>
                 <div class="card-wrap">
                     <div class="tabs">
-                        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                        <input type="radio" name="tab-btn" id="tab-btn-1" value="">
                         <label for="tab-btn-1">Товары</label>
-                        <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                        <input type="radio" name="tab-btn" id="tab-btn-2" value="" checked>
                         <label for="tab-btn-2">Услуги</label>
                     
                         <div id="content-1">
@@ -206,7 +206,12 @@
                                       <th class="card-table__th">№</th>
                                       <th class="card-table__th">Наименование</th>
                                       <th class="card-table__th">Количество</th>
-                                      <th class="card-table__th">Статус</th>
+                                      <th class="card-table__th">Цена (руб)</th>
+                                      <th class="card-table__th">Сумма (руб)</th>
+                                      <th class="card-table__th">НДС (руб)</th>
+                                      <th class="card-table__th">Сумма НДС (руб)</th>
+                                      <th class="card-table__th">Всего (руб)</th>
+                                      <th class="card-table__th"></th>
                                       <th class="card-table__th"></th>
                                   </tr>
                                 </thead>
@@ -217,42 +222,60 @@
                                       </td>
                                       <td class="card-table__td">1</td>
                                       <td class="card-table__td">
-                                        <select class="card-table__select">
-                                            <option>Выберите услугу</option>
-                                            <option value="Товар 1">Услуга 1</option>
-                                            <option value="Товар 2">Услуга 2</option>
-                                            <option value="Товар 3">Услуга 3</option>
-                                        </select>
+                                          <select class="card-table__select">
+                                              <option>Услуга</option>
+                                              <option value="1">Услуга 1</option>
+                                              <option value="2">Услуга 2</option>
+                                              <option value="3">Услуга 3</option>
+                                          </select>
                                       </td>
                                       <td class="card-table__td">
-                                        <input class="card-table__input" type="text" placeholder="0000">
+                                          <input class="card-table__input" type="text" placeholder="1,000">
                                       </td>
                                       <td class="card-table__td">
-                                        <select class="card-table__select">
-                                            <option>Выберите статус</option>
-                                            <option value="Склад 1">Есть</option>
-                                            <option value="Склад 2">Нет</option>
-                                        </select>
+                                          <input class="card-table__input" type="text" placeholder="1 000,00">
                                       </td>
+                                      <td class="card-table__td">
+                                          <input class="card-table__input" type="text" placeholder="1 000,00">
+                                      </td>
+                                      <td class="card-table__td">
+                                          <select class="card-table__select">
+                                              <option value="Склад 1">20%</option>
+                                              <option value="Склад 2">40%</option>
+                                              <option value="Склад 3">50%</option>
+                                          </select>
+                                      </td>
+                                      <td class="card-table__td">
+                                          <input class="card-table__input" type="text" placeholder="666,67">
+                                      </td>
+                                      <td class="card-table__td">
+                                          <input class="card-table__input" type="text" placeholder="1 000,00">
+                                      </td>
+                                      <td class="card-table__td">?</td>
                                       <td class="card-table__td tab__btns"><button class="tab__btn tab__btn_remove"></button></td>
                                   </tr>
-
-                                    <tr class="tab__result">
-                                        <td class="card-table__td"></td>
-                                        <td class="card-table__td"></td>
-                                        <td class="card-table__td">Итого</td>
-                                        <td class="card-table__td">0000</td>
-                                        <td class="card-table__td"></td>
-                                        <td class="card-table__td"></td>
-                                    </tr>
-                                    <tr class="tab__result">
-                                        <td class="card-table__td"></td>
-                                        <td class="card-table__td"></td>
-                                        <td class="card-table__td">Итого по документу</td>
-                                        <td class="card-table__td">0000</td>
-                                        <td class="card-table__td"></td>
-                                        <td class="card-table__td"></td>
-                                    </tr>
+                                  <tr class="tab__result">
+                                      <td class="card-table__td"></td>
+                                      <td class="card-table__td" colspan="2">Итого</td>
+                                      <td class="card-table__td">4,000</td>
+                                      <td class="card-table__td" colspan="3"></td>
+  
+                                      <td class="card-table__td">666,67</td>
+                                      <td class="card-table__td">4 000, 00</td>
+                                      <td class="card-table__td"></td>
+                                      <td class="card-table__td"></td>
+                                  </tr>
+                                  <tr class="tab__result">
+                                      <td class="card-table__td"></td>
+                                      <td class="card-table__td" colspan="2">Итого по документу</td>
+                                      <td class="card-table__td">8,000</td>
+                                      <td class="card-table__td" colspan="3"></td>
+  
+                                      <td class="card-table__td">30 666,67</td>
+                                      <td class="card-table__td">184 000, 00</td>
+                                      <td class="card-table__td"></td>
+                                      <td class="card-table__td"></td>
+                                  </tr>
                                 </tbody>
                             </table>
                         </div>
