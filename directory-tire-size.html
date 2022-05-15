@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дефектовочные ведомости</title>
+    <title>Марки авто</title>
     <link rel="stylesheet" href="pages/styles.css">
 </head>
-<body class="page">
+<body class="page closed-menu">
     <nav class="nav vertical-menu-wrapper">
         <div class="vertical-menu-logo">
             <div>МЕНЮ</div>
@@ -103,57 +103,30 @@
             <li class="nav__item"><a href="index.html" class="nav__link">Выход</a> </li>
         </ul>
     </nav>
-
     <div class="content-wrapper">
         <div class="content defect">
             <div class="defect-btn">
-                <a href="creatcard.html" class="defect__button"><span class="defect-icon-btn"></span>Создать ведомость</a>
+                <a href="#" class="defect__button"><span class="defect-icon-btn"></span>Создать</a>
             </div>
             <div class="defect-table scroll-table">
                 <table>
                     <thead>
                         <tr class="table-column">
                             <th class="table-col" tabindex="0">
-                                <div class="table-col__inner table-col__sort">Дата</div>
-                                <input type="text" class="table-col__input" placeholder="Поиск...">
-                            </th>
-                            <th class="table-col" tabindex="0">
-                                <div class="table-col__inner table-col__sort">Номер</div>
-                                <input type="text" class="table-col__input" placeholder="Поиск...">
-                            </th>
-                            <th class="table-col" tabindex="0">
-                                <div class="table-col__inner table-col__sort">Автомобиль</div>
-                                <input type="text" class="table-col__input" placeholder="Поиск...">
-                            </th>
-                            <th class="table-col" tabindex="0">
-                                <div class="table-col__inner table-col__sort">Прицеп</div>
-                                <input type="text" class="table-col__input" placeholder="Поиск...">
-                            </th>
-                            <th class="table-col" tabindex="0">
-                                <div class="table-col__inner table-col__sort">Пробег</div>
-                                <input type="text" class="table-col__input" placeholder="Поиск...">
-                            </th>
-                            <th class="table-col" tabindex="0">
-                                <div class="table-col__inner table-col__sort">Создал</div>
+                                <div class="table-col__inner table-col__sort">Размеры шин</div>
                                 <input type="text" class="table-col__input" placeholder="Поиск...">
                             </th>
                             <th class="table-col table-col__sect" tabindex="0">
                                 <div class="table-col__inner "></div>
                             </th>
-                            
-                        </tr>  
+                        </tr>
                     </thead>
                 </table>
                 <div class="scroll-table-body">
                     <table>
                         <tbody>
                             <tr class="table-row__list" data-index="0">
-                                <td class="table-row__item">00.00.0000</td>
-                                <td class="table-row__item">1234567</td>
-                                <td class="table-row__item">Название автомобиля х000хх 0</td>
-                                <td class="table-row__item">Название прицепа х000хх 0</td>
-                                <td class="table-row__item">00000 км</td>
-                                <td class="table-row__item">Иванов Иван Иванович</td>
+                                <td class="table-row__item">Марка</td>
                                 <td class="table-row__item table-row__sect">
                                     <a href="#" class="table-row__btn dropdown-btn"></a>
                                     <div class="dropdown">
@@ -165,27 +138,9 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="table-row__list" data-index="0">
-                                <td class="table-row__item">00.00.0000</td>
-                                <td class="table-row__item">1234567</td>
-                                <td class="table-row__item">Название автомобиля х000хх 0</td>
-                                <td class="table-row__item">Название прицепа х000хх 0</td>
-                                <td class="table-row__item">00000 км</td>
-                                <td class="table-row__item">Иванов Иван Иванович</td>
-                                <td class="table-row__item table-row__sect">
-                                    <a href="#" class="table-row__btn dropdown-btn"></a>
-                                    <div class="dropdown">
-                                        <ul class="dropdown__list">
-                                            <li class="dropdown__item">Просмотр</li>
-                                            <li class="dropdown__item">Редактировать</li>
-                                            <li class="dropdown__item">Удалить</li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody> 
+                        </tbody>
                     </table>
-                </div>    
+                </div>
             </div>
             <div class="pagination">
                 <div class="pagination-wrap">
@@ -204,6 +159,7 @@
             </div>
         </div>
     </div>
+
     <script src="scripts/script.js"></script>
 </body>
 </html>
