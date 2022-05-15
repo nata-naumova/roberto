@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Марки авто</title>
+    <title>Автомобили</title>
     <link rel="stylesheet" href="pages/styles.css">
 </head>
 <body class="page closed-menu">
@@ -106,6 +106,7 @@
             <li class="nav__item"><a href="index.html" class="nav__link">Выход</a> </li>
         </ul>
     </nav>
+
     <div class="content-wrapper">
         <div class="content defect">
             <div class="defect-btn">
@@ -116,20 +117,42 @@
                     <thead>
                         <tr class="table-column">
                             <th class="table-col" tabindex="0">
-                                <div class="table-col__inner table-col__sort">Марка</div>
+                                <div class="table-col__inner table-col__sort">Бренд</div>
+                                <input type="text" class="table-col__input" placeholder="Поиск...">
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner table-col__sort">Модель</div>
+                                <input type="text" class="table-col__input" placeholder="Поиск...">
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner table-col__sort">Размер</div>
+                                <input type="text" class="table-col__input" placeholder="Поиск...">
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner table-col__sort">Тип</div>
+                                <input type="text" class="table-col__input" placeholder="Поиск...">
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner table-col__sort">Артикул</div>
                                 <input type="text" class="table-col__input" placeholder="Поиск...">
                             </th>
                             <th class="table-col table-col__sect" tabindex="0">
                                 <div class="table-col__inner "></div>
                             </th>
-                        </tr>
+                            
+                        </tr>  
                     </thead>
                 </table>
                 <div class="scroll-table-body">
                     <table>
                         <tbody>
                             <tr class="table-row__list" data-index="0">
-                                <td class="table-row__item">Марка</td>
+                                <td class="table-row__item">00.00.0000</td>
+                                <td class="table-row__item"></td>
+                                <td class="table-row__item"></td>
+                                <td class="table-row__item"></td>
+                                <td class="table-row__item"></td>
+                                
                                 <td class="table-row__item table-row__sect">
                                     <a href="#" class="table-row__btn dropdown-btn"></a>
                                     <div class="dropdown">
@@ -141,9 +164,9 @@
                                     </div>
                                 </td>
                             </tr>
-                        </tbody>
+                        </tbody> 
                     </table>
-                </div>
+                </div>    
             </div>
             <div class="pagination">
                 <div class="pagination-wrap">
@@ -162,7 +185,6 @@
             </div>
         </div>
     </div>
-
     <script src="scripts/script.js"></script>
 </body>
 </html>
