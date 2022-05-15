@@ -24,7 +24,7 @@
                 <div class="dropdown__menu">
                     <ul class="nav__item-submenu">
                         <li class="nav__item-submenu__item">
-                            <a class="nav__item-submenu__link" href="#">Марки авто</a>
+                            <a class="nav__item-submenu__link" href="directory-avto.html">Марки авто</a>
                         </li>
                         <li class="nav__item-submenu__item">
                             <a class="nav__item-submenu__link" href="#">Размеры шин</a>
@@ -100,7 +100,62 @@
             <li class="nav__item"><a href="index.html" class="nav__link">Выход</a> </li>
         </ul>
     </nav>
-    <div class="content-wrapper"></div>
+    <div class="content-wrapper">
+        <div class="content defect">
+            <div class="defect-btn">
+                <a href="#" class="defect__button"><span class="defect-icon-btn"></span>Создать</a>
+            </div>
+            <div class="defect-table scroll-table">
+                <table>
+                    <thead>
+                        <tr class="table-column">
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner table-col__sort">Марка</div>
+                                <input type="text" class="table-col__input" placeholder="Поиск...">
+                            </th>
+                            <th class="table-col table-col__sect" tabindex="0">
+                                <div class="table-col__inner "></div>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+                <div class="scroll-table-body">
+                    <table>
+                        <tbody>
+                            <tr class="table-row__list" data-index="0">
+                                <td class="table-row__item">Марка</td>
+                                <td class="table-row__item table-row__sect">
+                                    <a href="#" class="table-row__btn dropdown-btn"></a>
+                                    <div class="dropdown">
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__item">Просмотр</li>
+                                            <li class="dropdown__item">Редактировать</li>
+                                            <li class="dropdown__item">Удалить</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="pagination">
+                <div class="pagination-wrap">
+                    <button class="pagination__btn"><</button>
+                    <button class="pagination__btn">1</button>
+                    <button class="pagination__btn">2</button>
+                    <button class="pagination__btn" disabled>...</button>
+                    <button class="pagination__btn">x</button>
+                    <button class="pagination__btn">></button>
+                    <select class="pagination__select">
+                        <option value="10" class="pagination__option">10</option>
+                        <option value="20" class="pagination__option">20</option>
+                        <option value="30" class="pagination__option">30</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="scripts/script.js"></script>
 </body>
