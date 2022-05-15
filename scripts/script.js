@@ -8,15 +8,23 @@ menuBtn.addEventListener('click', () => {
 });
 
 //Взаимодействие с меню второго уровня
-const submenuItem = document.querySelectorAll('.nav__link-icon');
-const submenu = document.querySelector('.nav__item-submenu');
-for(let i = 0; i < submenuItem.length; i++) {
-    const item = submenuItem[i];
-    item.addEventListener('click', () => {
-        submenu.classList.toggle('nav__item-submenu_active');
-        item.classList.toggle('nav__link-icon_active');
-    })
-}
+//dropdown__btn
+//dropdown__menu
+const menuItem = document.querySelectorAll('.dropdown__btn');
+const submenu = document.querySelectorAll('.dropdown__menu');
+
+menuItem.forEach(el => {
+    el.addEventListener('click', (e) => {
+        let currentItem = e.currentTarget;
+        let drop = currentItem.closest('.nav__item').querySelector('.dropdown__menu');
+        submenu.forEach(el => {
+            if(el !== drop) {
+                el.classList.remove('dropdown__menu_active');
+            }
+        });
+        drop.classList.toggle('dropdown__menu_active');
+    });
+})
 
 //Кнопка в таблице (троеточие)
 const menuBtns = document.querySelectorAll('.dropdown-btn');

@@ -55,16 +55,25 @@
 .nav__link:hover {
     color: #333;
 }
-
-.nav__item-submenu {
+.dropdown__menu {
     display: none;
+    opacity: 0;
+}
+.dropdown__menu_active {
+    display: block;
+    opacity: 1;
+}
+/*
+.nav__link-icon .dropdown__menu_active {
+    transform: rotate(180deg);
+}
+*/
+.nav__item-submenu {
     padding-left: 0;
     list-style-type: none;
     margin: 10px 0;
 }
-.nav__item-submenu_active {
-    display: block;
-}
+
 .nav__link-icon {
     display: flex;
     align-items: center;
@@ -78,9 +87,7 @@
     background-position: right;
     transition: transform 0.3s ease;
 }
-.nav__link-icon_active > .link-icon {
-    transform: rotate(180deg);
-}
+
 .nav__item-submenu__item {
     padding: 10px 10px 10px 0;
     font-size: 14px;
