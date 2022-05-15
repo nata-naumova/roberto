@@ -31,9 +31,6 @@
     margin-bottom: 10px;
     text-align: center;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
 }
 .table-col__sort::after {
     content: '';
@@ -43,6 +40,10 @@
     background-image: url(../../images/table-sort.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
 }
 .table-col__inner_active {
     background-image: url(../../images/table-sort-active.svg);
