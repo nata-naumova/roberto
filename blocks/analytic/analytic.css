@@ -1,0 +1,8 @@
+.analytic-content {
+    display: flex;
+    gap: 45px;
+    margin-bottom: 25px;
+}
+.analytic-content .table-col__inner {
+    cursor: default;
+}

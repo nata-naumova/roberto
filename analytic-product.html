@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Автомобили</title>
+    <title>Аналитика - Товары</title>
     <link rel="stylesheet" href="pages/styles.css">
 </head>
 <body class="page closed-menu">
@@ -109,9 +109,62 @@
 
     <div class="content-wrapper">
         <div class="content defect">
-            <div class="defect-btn">
-                <a href="#" class="defect__button"><span class="defect-icon-btn"></span>Создать</a>
+            <div class="analytic-content scroll-table">
+                <table>
+                    <thead>
+                        <tr class="table-column">
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner">Бренд</div>
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner">Склад</div>
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner">Категория</div>
+                            </th>
+                            <th class="table-col" tabindex="0">
+                                <div class="table-col__inner">Период</div>
+                            </th>
+                            
+                        </tr>  
+                    </thead>
+                    <tbody>
+                        <tr class="table-row__list" data-index="0">
+                            <td class="table-row__item">
+                                <select class="card-table__select">
+                                    <option value="0">Выберите бренд</option>
+                                    <option value="1">бренд 1</option>
+                                    <option value="2">бренд 2</option>
+                                    <option value="3">бренд 3</option>
+                                </select>
+                            </td>
+                            <td class="table-row__item">
+                                <select class="card-table__select">
+                                    <option value="0">Выберите склад</option>
+                                    <option value="1">склад 1</option>
+                                    <option value="2">склад 2</option>
+                                    <option value="3">склад 3</option>
+                                </select>
+                            </td>
+                            <td class="table-row__item">
+                                <select class="card-table__select">
+                                    <option value="0">Выберите категорию</option>
+                                    <option value="1">категория 1</option>
+                                    <option value="2">категория 2</option>
+                                    <option value="3">категория 3</option>
+                                </select>
+                            </td>
+                            <td class="table-row__item">
+                                <input type="date" class="table-col__input">
+                            </td>
+                        </tr>
+                    </tbody> 
+                </table>
+                <div class="defect-btn">
+                    <a href="#" class="defect__button">Сформировать</a>
+                </div>
             </div>
+            
             <div class="defect-table scroll-table">
                 <table>
                     <thead>
@@ -121,25 +174,18 @@
                                 <input type="text" class="table-col__input" placeholder="Поиск...">
                             </th>
                             <th class="table-col" tabindex="0">
-                                <div class="table-col__inner table-col__sort">Бренд</div>
+                                <div class="table-col__inner table-col__sort">Количество</div>
                                 <input type="text" class="table-col__input" placeholder="Поиск...">
                             </th>
                             <th class="table-col" tabindex="0">
-                                <div class="table-col__inner table-col__sort">Категория</div>
+                                <div class="table-col__inner table-col__sort">Сумма</div>
                                 <input type="text" class="table-col__input" placeholder="Поиск...">
                             </th>
                             <th class="table-col" tabindex="0">
-                                <div class="table-col__inner table-col__sort">Склад</div>
+                                <div class="table-col__inner table-col__sort">Оборачиваемость<br>в месяц</div>
                                 <input type="text" class="table-col__input" placeholder="Поиск...">
                             </th>
-                            <th class="table-col" tabindex="0">
-                                <div class="table-col__inner table-col__sort">id</div>
-                                <input type="text" class="table-col__input" placeholder="Поиск...">
-                            </th>
-                            <th class="table-col table-col__sect" tabindex="0">
-                                <div class="table-col__inner "></div>
-                            </th>
-                            
+                                                        
                         </tr>  
                     </thead>
                 </table>
@@ -147,22 +193,10 @@
                     <table>
                         <tbody>
                             <tr class="table-row__list" data-index="0">
-                                <td class="table-row__item">Название</td>
-                                <td class="table-row__item"></td>
-                                <td class="table-row__item"></td>
-                                <td class="table-row__item"></td>
-                                <td class="table-row__item"></td>
-                                
-                                <td class="table-row__item table-row__sect">
-                                    <a href="#" class="table-row__btn dropdown-btn"></a>
-                                    <div class="dropdown">
-                                        <ul class="dropdown__list">
-                                            <li class="dropdown__item">Просмотр</li>
-                                            <li class="dropdown__item">Редактировать</li>
-                                            <li class="dropdown__item">Удалить</li>
-                                        </ul>
-                                    </div>
-                                </td>
+                                <td class="table-row__item">Название товара</td>
+                                <td class="table-row__item">0000</td>
+                                <td class="table-row__item">0000 руб</td>
+                                <td class="table-row__item">0000 в мес</td>
                             </tr>
                         </tbody> 
                     </table>
